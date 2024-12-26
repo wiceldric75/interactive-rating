@@ -1,0 +1,231 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: var(--Very-Dark-Blue, #131518);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  position: relative;
+}
+
+main {
+  width: 327px;
+  border-radius: 15px;
+  background: var(
+    --black-gradient,
+    radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+  );
+}
+
+.rating {
+  padding: 24px 24px 32px 24px;
+}
+
+.start-icon {
+  border-radius: 99px;
+  background-color: #262e38;
+  margin-bottom: 16px;
+}
+
+.rating h1 {
+  color: var(--Pure-White, #fff);
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.rating p {
+  color: var(--Light-Grey, #969fad);
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  margin-bottom: 24px;
+}
+.rating-bubbles {
+  display: flex;
+  gap: 17px;
+  margin-bottom: 24px;
+}
+span {
+  border-radius: 99px;
+  background-color: #262e38;
+  width: 42px;
+  height: 42px;
+  color: var(--Light-Grey, #969fad);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 42px; /* 171.429% */
+  letter-spacing: 0.175px;
+}
+
+/* Hover effect */
+.rating-bubbles span:hover {
+  background-color: var(--Orange, #fc7614);
+  color: #262e38;
+}
+
+/* Active state styles */
+.rating-bubbles span.active {
+  background-color: var(--Pure-White, #fff);
+  color: var(--Dark-Blue, #262e38);
+}
+
+.submit-btn {
+  width: 279px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 22.5px;
+  background: var(--Orange, #fc7614);
+  margin: 0 auto;
+  border: none;
+  color: var(--Very-Dark-Blue, #131518);
+  font-feature-settings: "liga" off, "clig" off;
+
+  /* Heading (Medium) */
+  font-family: Overpass;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+}
+.thank-you {
+  padding: 32px 24px 37px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+  text-align: center;
+}
+
+.thank-you-img {
+  width: 144px;
+  height: 96px;
+  flex-shrink: 0;
+  margin-bottom: 24px;
+}
+
+.thank-you h2 {
+  width: 168px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 22.5px;
+  background: var(--Dark-Blue, #262e38);
+  color: var(--Orange, #fc7614);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; /* 157.143% */
+  margin-bottom: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thank-you h1 {
+  color: var(--Pure-White, #fff);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.thank-you p {
+  color: var(--Light-Grey, #969fad);
+  text-align: center;
+  font-family: Overpass;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+}
+
+.submit-btn:hover {
+  border-radius: 22.5px;
+  background: var(--Pure-White, #fff);
+}
+
+@media (min-width: 1025px) {
+  main {
+    width: 412px;
+    border-radius: 30px;
+    background: var(
+      --black-gradient,
+      radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%)
+    );
+  }
+
+  .rating {
+    padding: 32px 39px 32px 32px;
+  }
+  .rating h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+  }
+  .start-icon {
+    margin-bottom: 30px;
+  }
+  .rating p {
+    font-size: 15px;
+  }
+
+  span {
+    width: 51px;
+    height: 51px;
+    line-height: 51px;
+  }
+  .rating-bubbles {
+    gap: 21px;
+    margin-bottom: 32px;
+  }
+
+  .submit-btn {
+    width: 341px;
+  }
+
+  .thank-you {
+    padding: 45px 40px 45px 32px;
+  }
+  .thank-you-img {
+    width: 162px;
+    height: 108px;
+    flex-shrink: 0;
+    margin-bottom: 36px;
+  }
+  .thank-you h2 {
+    width: 193px;
+    height: 32px;
+    font-size: 15px;
+    margin-bottom: 36px;
+  }
+  .thank-you h1 {
+    font-size: 28px;
+    margin-bottom: 7px;
+  }
+  .thank-you p {
+    font-size: 15px;
+  }
+}
