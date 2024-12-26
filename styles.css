@@ -20,7 +20,7 @@ body {
   position: relative;
 }
 
-main {
+section {
   width: 327px;
   border-radius: 15px;
   background: var(
@@ -169,7 +169,7 @@ span {
 }
 
 @media (min-width: 1025px) {
-  main {
+  section {
     width: 412px;
     border-radius: 30px;
     background: var(
